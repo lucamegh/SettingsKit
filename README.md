@@ -33,7 +33,7 @@ struct AppSettings: SettingsProtocol, Codable {
 }
 ```
 
-In order to manipulate this settings, you are going to need a `SettingsManager`. While you can create your own settings managers by providing a custom [`Storage`](https://github.com/lucamegh/Storage), SettingsKit provides two different built-in managers that will suite most use cases, `local` and `cloud`. Use `SettingsManager.local` to store your `Codable` settings in `UserDefaults.standard`; `SettingsManager.cloud` to store them in `NSUbiquitousKeyValueStore.default`. 
+In order to manipulate these settings, you are going to need a `SettingsManager`. While you can create your own settings managers by providing a custom [`Storage`](https://github.com/lucamegh/Storage), SettingsKit provides two different built-in managers that will suite most use cases, `local` and `cloud`. Use `SettingsManager.local` to store your `Codable` settings in `UserDefaults.standard`; `SettingsManager.cloud` to store them in `NSUbiquitousKeyValueStore.default`. 
 
 ```swift
 let settingsManager = SettingsManager<AppSettings>.local
