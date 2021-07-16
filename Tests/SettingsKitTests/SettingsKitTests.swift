@@ -1,11 +1,10 @@
-    import XCTest
-    @testable import SettingsKit
+/**
+ * SettingsKit
+ * Copyright (c) Luca Meghnagi 2021
+ * MIT license, see LICENSE file for details
+ */
 
-    final class SettingsKitTests: XCTestCase {
-        func testExample() {
-            // This is an example of a functional test case.
-            // Use XCTAssert and related functions to verify your tests produce the correct
-            // results.
-            XCTAssertEqual(SettingsKit().text, "Hello, World!")
-        }
-    }
+import XCTest
+@testable import SettingsKit
+
+final class SettingsKitTests: XCTestCase {}
