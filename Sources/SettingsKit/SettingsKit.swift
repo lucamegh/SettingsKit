@@ -93,8 +93,8 @@ public extension SettingsManager where Settings: Codable {
     }
     
     static func cloud(
-        key: String? = nil,
-        ubiquitousKeyValueStore: NSUbiquitousKeyValueStore = .default
+        key: String?,
+        ubiquitousKeyValueStore: NSUbiquitousKeyValueStore
     ) -> SettingsManager<Settings> {
         SettingsManager(
             storage: .ubiquitousKeyValueStore(
